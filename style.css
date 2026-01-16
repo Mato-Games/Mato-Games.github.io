@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9E6CF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    min-height: 100vh;
+}
+
+header {
+    background-color: #F6CA9F;
+    box-shadow: #00000064 0 4px;
+    padding: 8px;
+}
+
+header .main-title {
+    color: #EA323C;
+}
+
+main {
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #F6CA9F;
+    border-radius: 16px;
+    box-shadow: #00000064 -4px 4px;
+    padding: 16px;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#tt-game h1 {
+    font-size: 48px;
+}
+
+#meta-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 150px;
+}
+
+#app-store-link {
+    justify-self: end;
+    margin-top: 30px;
+}
+
+.icon-frame{
+    background-color: #424c6e;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+
+    border-radius: 14px;
+}
+
+.icon-frame img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#contact-title {
+    margin-top: 15px;
+    width: 80%;
+}
+
+footer {
+    background-color: #657392;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Fonts */
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 650px) {
+    .card{
+        flex-direction: column;
+    }
+}

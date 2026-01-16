@@ -3,92 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Simple Site</title>
-  <meta name="description" content="A simple static website." />
+  <title>Mato Games</title>
+  <meta name="description" content="Indie Game website, created by Timothy Diersing." />
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    /* Basic, clean styling */
-    :root { color-scheme: light dark; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.5;
-    }
-    header, main, footer { max-width: 900px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #ccc; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    footer { border-top: 1px solid #ccc; font-size: 0.9rem; opacity: 0.8; }
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      text-decoration: none;
-    }
-    .btn:hover { filter: brightness(0.95); }
-  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jacquard+12&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1>My Simple Site</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1 class="main-title">Mato Games</h1>
   </header>
 
   <main>
+    <section id="tt-game" class="card">
+      <div id="meta-data">
+        <h1 class="jacquard-12-regular">Treasured Towers</h1>
+        <h2>Collect. Upgrade. Defend.</h2>
+        <a id="app-store-link" href="https://apps.apple.com/app/id6753777770" rel="noopener">
+          <img
+          src="images\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+          alt="Download on the App Store"
+          />
+        </a>
+      </div>
 
-    <a href="https://apps.apple.com/app/id6753777770" rel="noopener">
-      <img
-        src="images\Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
-        alt="Download on the App Store"
-      />
-    </a>
-
-    <iframe 
-        src="https://discord.com/widget?id=1453701766448152640&theme=dark" 
-        width="350" 
-        height="500" 
-        allowtransparency="true" 
-        frameborder="0" 
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-    </iframe>
-
-    <section id="about" class="card">
-      
+      <div class="icon-frame">
+        <img src="images\app-icon.png" alt="tt app icon">
+      </div>
     </section>
-
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Project One</strong> — what it does, tech used.</li>
-        <li><strong>Project Two</strong> — what it does, tech used.</li>
-        <li><strong>Project Three</strong> — what it does, tech used.</li>
-      </ul>
-    </section>
-
+    
+    <h2 id="contact-title">Need Help? Or want to give feedback?</h2>
     <section id="contact" class="card">
-      <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:you@example.com">you@example.com</a><br />
-        GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a>
+        Email: <a href="mailto:mato.games.tt@gmail.com">mato.games.tt@gmail.com</a><br />
+      </p>
+      <p>
+        Or Join my discord: <a href="https://discord.com/invite/5pbJh3aH3f">Treasured Towers Discord</a>
       </p>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Mato Games. All rights reserved.</p>
+    <p>© <span id="year"></span> Timothy Diersing. All rights reserved.</p>
+    <a href="Treasured Towers Privacy Policy.pdf">Privacy Policy</a>
   </footer>
 
   <script>
